@@ -2,6 +2,8 @@
 O projeto tem como objetivo realizar uma simulação de Dinâmica Molecular, escrita em linguagem Python, implementando o potencial q-deformado, proposto por Alves, Farias e Santos (2022). 
 O projeto está, no momento, em fase de documentação.
 
+O Jupyter Notebook presente no repositório também está em desenvolvimento.
+
 ## Potencial q-deformado:
 $$\Phi (\nu) = \frac{V_0 B_0}{(q-1)^2}\left[ \frac{1}{2} \nu^{-2(q-1)} - \nu^{-(q-1)} \right]\ (1)$$
 
