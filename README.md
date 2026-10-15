@@ -1,10 +1,11 @@
-# O projeto tem como objetivo realizar uma simulação de Dinâmica Molecular, escrita em linguagem Python, implementando o potencial q-deformado, proposto por Alves, Farias e Santos (2022). 
+# Implementação de um potencial de Lennard-Jones modificado para análise de interações entre partículas
+O projeto tem como objetivo realizar uma simulação de Dinâmica Molecular, escrita em linguagem Python, implementando o potencial q-deformado, proposto por Alves, Farias e Santos (2022). 
 O projeto está, no momento, em fase de documentação.
 
 ## Potencial q-deformado:
-$$\Phi (\nu) = \frac{V_0 B_0}{(q-1)^2}\left[ \frac{1}{2} \nu^{-2(q-1)} - \nu^{-(q-1)} \right]$$
+$$\Phi (\nu) = \frac{V_0 B_0}{(q-1)^2}\left[ \frac{1}{2} \nu^{-2(q-1)} - \nu^{-(q-1)} \right]\ (1)$$
 
-É possível mostrar que este potencial (o qual será implementado na simulação) é equivalente ao 12-6 (para $q-1 = 2$). Da equação $(70)$ de (ref.: qeos), $\nu ^{-(1/3)}=(\frac{a}{r})$. Fazendo a substituição de $\nu$ e utilizando $q-1$ = 2:
+É possível mostrar que este potencial (o qual será implementado na simulação) é equivalente ao 12-6 (para $q-1 = 2$). Da equação $(70)$ de [1], $\nu ^{-(1/3)}=(\frac{a}{r})$. Fazendo a substituição de $\nu$ e utilizando $q-1$ = 2:
 
 $$\Phi (r) = \frac{V_0 B_0}{4}\left[ \frac{1}{2} \left(\frac{a}{r}\right)^{12} - \left(\frac{a}{r}\right)^{6} \right] = C \left[ \frac{1}{2} \left(\frac{a}{r}\right)^{12} - \left(\frac{a}{r}\right)^{6} \right] $$
 
@@ -29,12 +30,19 @@ $$F= - \nabla \Phi (r) = 4 \epsilon \left(-2m \frac{\sigma ^{2m}}{r^{2m+1}}+ m \
 
 Referências bibliográficas: 
 [1] ALVES, Á.S.; FARIAS, F.A.; SANTOS, R.N. 2022. A Proposal of an Isothermal q-EoS for Solids at High Pressures. Sitientibus Ser. Cienc. Fis. 18: 1-13.
+
 [2] GLEIM, T. 2009. Velocity-Verlet-like algorithm for simulations of stochastic dynamics. arXiv preprint arXiv:0906.1863.
+
 [3] JONES, J.E. 1924. On the determination of molecular fields. II. From the equation of state of a gas. Proc. R. Soc. A 106(738): 463-477.
+
 [4] MADEIRA, L.; VITIELLO, S. 2012. A função radial de distribuição de pares para sistemas Lennard-Jones bidimensionais. Rev. Bras. Ensino Fís. 34(4).
+
 [5] MARTÍNEZ, Leandro; BORIN, Ivana Aparecida; SKAF, Munir S. Fundamentos de Simulação por Dinâmica Molecular. In: MORGON, Nelson Henrique; COUTINHO, Kaline Rabelo (ed.). Métodos de química teórica e modelagem molecular. São Paulo: Editora Livraria da Física, 2007. cap. 12, p. 413-452.
+
 [6] NAMBA, A. M.; SILVA, V. B. da; SILVA, C. H. T. P. da. Dinâmica molecular: teoria e aplicações em planejamento de fármacos. Eclética Química, Araraquara, v. 33, n. 4, p. 13-23, 2008. Disponível em: https://doi.org/10.26850/1678-4618eqj.v33.4.2008.p13-23. Acesso em: 14 out. 2026.
+
 [7] PATERLINI, M.G.; FERGUSON, D.M. 1998. Constant temperature simulations using the Langevin equation with velocity Verlet integration. Chem. Phys. 236(1-3): 243-252.
+
 [8] RAHMAN, A. 1964. Correlations in the Motion of Atoms in Liquid Argon. Phys. Rev. 136(2A): A405-A411.
 [9] SCHWERDTFEGER, P.; WALES, D.J. 2024. 100 Years of the Lennard-Jones Potential. J. Chem. Theory Comput. 20(9): 3379-3405.
 [10] SHEKAARI, A.; JAFARI, M. 2021. A concise introduction to molecular dynamics simulation: Theory and programming. arXiv preprint arXiv:2103.16944.
