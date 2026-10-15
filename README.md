@@ -31,6 +31,7 @@ Este será o potencial utilizado na simulação. A expressão para a força, por
 $$F= - \nabla \Phi (r) = 4 \epsilon \left(-2m \frac{\sigma ^{2m}}{r^{2m+1}}+ m \frac{\sigma ^m}{r^{m+1}}\right)$$
 
 Referências bibliográficas: 
+
 [1] ALVES, Á.S.; FARIAS, F.A.; SANTOS, R.N. 2022. A Proposal of an Isothermal q-EoS for Solids at High Pressures. Sitientibus Ser. Cienc. Fis. 18: 1-13.
 
 [2] GLEIM, T. 2009. Velocity-Verlet-like algorithm for simulations of stochastic dynamics. arXiv preprint arXiv:0906.1863.
