@@ -5,7 +5,7 @@ O projeto está, no momento, em fase de documentação.
 O Jupyter Notebook presente no repositório também está em desenvolvimento.
 
 ## Potencial q-deformado:
-$$\Phi (\nu) = \frac{V_0 B_0}{(q-1)^2}\left[ \frac{1}{2} \nu^{-2(q-1)} - \nu^{-(q-1)} \right]\ (1)$$
+$$\Phi (\nu) = \frac{V_0 B_0}{(q-1)^2}\left[ \frac{1}{2} \nu^{-2(q-1)} - \nu^{-(q-1)} \right]$$
 
 É possível mostrar que este potencial (o qual será implementado na simulação) é equivalente ao 12-6 (para $q-1 = 2$). Da equação $(70)$ de [1], $\nu^{-1/3} = (\frac{a}{r})$. Fazendo a substituição de $\nu$ e utilizando $q-1$ = 2:
 
